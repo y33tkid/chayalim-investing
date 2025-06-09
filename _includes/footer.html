@@ -1,0 +1,24 @@
+<footer class="section" style="text-align:center; font-size: 0.9em; color: var(--text-muted); border-top: 1px solid #2d3748; margin-top: 60px; padding-top: 30px;">
+  <p>© חיילים משקיעים {{ site.time | date: '%Y' }} — נבנה באהבה וללא מטרת רווח</p>
+</footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const topicsToggle = document.getElementById('topics-toggle');
+    const topicsDropdown = document.getElementById('topics-dropdown');
+
+    if (topicsToggle && topicsDropdown) {
+      topicsToggle.addEventListener('click', function(event) {
+        event.preventDefault();
+        topicsDropdown.classList.toggle('show');
+      });
+
+      // Close dropdown if clicked outside
+      window.addEventListener('click', function(event) {
+        if (!topicsToggle.contains(event.target) && !topicsDropdown.contains(event.target)) {
+          topicsDropdown.classList.remove('show');
+        }
+      });
+    }
+  });
+</script>
