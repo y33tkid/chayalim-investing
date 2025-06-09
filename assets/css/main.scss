@@ -1,3 +1,7 @@
+---
+# This front matter is required for Jekyll to process the file.
+---
+
 /* FILE: assets/css/main.scss */
 
 /* --- General Site Styles & Variables --- */
@@ -192,15 +196,15 @@ body {
   border-radius: 12px;
   padding: 40px;
 }
- .story p {
+.story p {
   font-size: 1.2em;
   line-height: 1.8;
   color: var(--text-muted);
   margin-bottom: 1em;
- }
- .story p:last-child {
+}
+.story p:last-child {
   margin-bottom: 0;
- }
+}
 
 /* --- Newsletter Form --- */
 .newsletter-form {
@@ -272,7 +276,7 @@ body {
     padding: 60px 20px;
     text-align: center;
   }
-   .main-header {
-      padding: 15px 20px;
-   }
+  .main-header {
+     padding: 15px 20px;
+  }
 }
