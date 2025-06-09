@@ -25,11 +25,4 @@ plugins:
 # Make sure all files are read correctly
 encoding: utf-8
 ```scss
-/*
- * ===============================================================
- * FILE: assets/css/main.scss
- * ===============================================================
- * ACTION: Replace the entire content of your existing main.scss
- * with this version.
- * The '---' at the top is the required signal for Jekyll.
- */
+
