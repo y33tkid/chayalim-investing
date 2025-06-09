@@ -2,8 +2,6 @@
 # This front matter is required for Jekyll to process the file.
 ---
 
-/* FILE: assets/css/main.scss */
-
 /* --- General Site Styles & Variables --- */
 body {
   direction: rtl;
@@ -13,6 +11,7 @@ body {
   color: #f8fafc;
   margin: 0;
   padding: 0;
+  line-height: 1.7;
 }
 
 :root {
@@ -20,6 +19,25 @@ body {
   --accent-dark: #16a34a;
   --bg-card: #1e293b;
   --text-muted: #cbd5e1;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* --- Main Layout Wrapper --- */
+.content-wrapper {
+  padding: 0 20px;
 }
 
 /* --- Header & Navigation --- */
@@ -43,24 +61,28 @@ body {
   font-size: 1.5em;
   font-weight: 700;
   color: #fff;
+}
+.logo:hover {
   text-decoration: none;
 }
+
 .main-header nav {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 .main-header nav a {
   color: var(--text-muted);
-  text-decoration: none;
   margin-left: 25px;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 .main-header nav a:hover {
   color: var(--accent);
+  text-decoration: none;
 }
+
 .nav-item-container {
-    position: relative;
+  position: relative;
 }
 .dropdown-menu {
   display: none;
@@ -76,26 +98,20 @@ body {
   z-index: 100;
 }
 .dropdown-menu.show {
-    display: block;
+  display: block;
 }
 .dropdown-menu a {
-    color: var(--text-muted);
-    padding: 12px 20px;
-    text-decoration: none;
-    display: block;
-    text-align: right;
-    margin: 0;
+  padding: 12px 20px;
+  display: block;
+  text-align: right;
+  margin: 0;
 }
 .dropdown-menu a:hover {
-    background-color: #2d3748;
-    color: #fff;
+  background-color: #2d3748;
+  color: #fff;
 }
 
-
-/* --- General Page & Section Structure --- */
-.content-wrapper {
-    padding: 0 20px;
-}
+/* --- Section Structure --- */
 .section {
   padding: 60px 20px;
   max-width: 1000px;
@@ -105,24 +121,23 @@ body {
   font-size: 2.5em;
   margin-bottom: 20px;
   text-align: center;
+  color: #fff;
 }
 .section > p {
   font-size: 1.2em;
-  line-height: 1.8;
-  color: var(--text-muted);
   text-align: center;
   max-width: 700px;
   margin: 0 auto 40px auto;
+  color: var(--text-muted);
 }
 
-/* --- Homepage Specific Styles --- */
+/* --- Homepage Hero Section --- */
 .hero {
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   padding: 80px 40px;
-  background: linear-gradient(to left, rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('https://placehold.co/1200x600/1e293b/FFFFFF?text=Collage+of+Soldiers') center/cover;
+  background: linear-gradient(to left, rgba(15,23,42,0.8), rgba(15,23,42,0.5)), url('[https://placehold.co/1200x600/1e293b/FFFFFF?text=Collage+of+Soldiers](https://placehold.co/1200x600/1e293b/FFFFFF?text=Collage+of+Soldiers)') center/cover;
 }
 .hero h1 {
   font-size: 3em;
@@ -131,13 +146,10 @@ body {
 .hero p {
   font-size: 1.3em;
   max-width: 600px;
-  line-height: 1.6;
 }
 .hero .cta {
   margin-top: 30px;
 }
-
-/* --- Button Styles --- */
 .btn {
   padding: 12px 28px;
   font-size: 1.1em;
@@ -146,16 +158,16 @@ body {
   border: none;
   background-color: var(--accent);
   color: #fff;
-  text-decoration: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 .btn:hover {
   background-color: var(--accent-dark);
+  color: #fff;
+  text-decoration: none;
 }
 
-
-/* --- Card Styles --- */
+/* --- Card Grid --- */
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -164,21 +176,19 @@ body {
   align-items: stretch;
 }
 .card-link {
-    text-decoration: none;
-    display: flex;
-    color: inherit;
+  display: flex;
 }
 .card {
   background: var(--bg-card);
   border-radius: 12px;
   padding: 30px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   width: 100%;
 }
 .card-link:hover .card {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(34, 197, 94, 0.2);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(34, 197, 94, 0.2);
 }
 .card h3 {
   color: #fff;
@@ -187,19 +197,15 @@ body {
 }
 .card p {
   color: var(--text-muted);
-  line-height: 1.7;
 }
 
-/* --- Story Section Styles --- */
+/* --- Story Box --- */
 .story {
   background-color: var(--bg-card);
   border-radius: 12px;
   padding: 40px;
 }
 .story p {
-  font-size: 1.2em;
-  line-height: 1.8;
-  color: var(--text-muted);
   margin-bottom: 1em;
 }
 .story p:last-child {
@@ -208,37 +214,38 @@ body {
 
 /* --- Newsletter Form --- */
 .newsletter-form {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 .newsletter-form input[type="email"] {
-    padding: 12px;
-    border-radius: 8px;
-    border: 1px solid var(--bg-card);
-    background-color: var(--bg-card);
-    color: #f8fafc;
-    min-width: 300px;
-    font-size: 1em;
-}
-.newsletter-form input[type="email"]::placeholder {
-    color: var(--text-muted);
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid var(--bg-card);
+  background-color: var(--bg-card);
+  color: #f8fafc;
+  min-width: 300px;
+  font-size: 1em;
 }
 
-/* --- Styles for Posts (from post.html) --- */
+/* --- Post and About Page Styles --- */
+.page-container,
 .post {
   max-width: 800px;
   margin: 40px auto;
+  padding: 20px;
 }
-.post-header {
+.post-header,
+.page-header {
   text-align: center;
   margin-bottom: 40px;
   border-bottom: 1px solid #2d3748;
   padding-bottom: 30px;
 }
-.post-title {
+.post-title,
+.page-title {
   font-size: 2.8em;
   margin-bottom: 10px;
   line-height: 1.2;
@@ -247,27 +254,41 @@ body {
   color: var(--text-muted);
   font-size: 1em;
 }
-.post-content {
-  font-size: 1.2em;
-  line-height: 1.8;
+.post-content,
+.page-content {
+  font-size: 1.15em;
   color: var(--text-muted);
 }
-.post-content h1, .post-content h2, .post-content h3 {
+.post-content h2, .post-content h3,
+.page-content h2, .page-content h3 {
   color: #fff;
   margin-top: 40px;
   margin-bottom: 20px;
 }
-.post-content img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 12px;
-  margin: 30px 0;
-}
-.post-content a {
-    color: var(--accent);
-}
-.post-content ul, .post-content ol {
+.post-content ul, .post-content ol,
+.page-content ul, .page-content ol {
     padding-right: 20px;
+}
+.page-content .custom-list {
+  list-style: none;
+  padding-right: 0;
+}
+.page-content .custom-list li {
+  background-color: var(--bg-card);
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  border-right: 3px solid var(--accent);
+}
+
+/* --- Footer --- */
+.main-footer {
+    text-align:center;
+    font-size: 0.9em;
+    color: var(--text-muted);
+    border-top: 1px solid #2d3748;
+    margin-top: 60px;
+    padding: 30px 20px;
 }
 
 /* --- Responsive Media Queries --- */
@@ -275,8 +296,9 @@ body {
   .hero {
     padding: 60px 20px;
     text-align: center;
+    flex-direction: column;
   }
   .main-header {
-     padding: 15px 20px;
+    padding: 15px 20px;
   }
 }
