@@ -137,7 +137,7 @@ img {
   align-items: center;
   justify-content: space-between;
   padding: 80px 40px;
-  background: linear-gradient(to left, rgba(15,23,42,0.8), rgba(15,23,42,0.5)), url('[https://placehold.co/1200x600/1e293b/FFFFFF?text=Collage+of+Soldiers](https://placehold.co/1200x600/1e293b/FFFFFF?text=Collage+of+Soldiers)') center/cover;
+  background: linear-gradient(to left,rgba(15,23,42,0.8),rgba(15,23,42,0.5)),url('{{ "/assets/images/hero.jpg" | relative_url }}')center/cover no-repeat;
 }
 .hero h1 {
   font-size: 3em;
