@@ -57,7 +57,7 @@ date: 2025-06-09
 
 יש לכם שאלות? רוצים להצטרף למיזם? פנו אלינו:
 
-- דוא"ל: contact@chayalim-investing.org.il
+- דוא"ל: contact@chayalim-investing.com
 - טלפון: 050-1234567
 - [פייסבוק](https://www.facebook.com)
 - [אינסטגרם](https://www.instagram.com)
