@@ -29,7 +29,6 @@ twitter_username: chayalim_invest
 github_username:  chayalim-investing
 
 # Build settings
-theme: minima
 plugins:
   - jekyll-feed
 
