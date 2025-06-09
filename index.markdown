@@ -46,19 +46,42 @@ title: "העתיד הכלכלי שלך מתחיל כאן"
   <h2>מה תמצאו כאן?</h2>
   <p>התכנים נבנו במיוחד בשביל חיילים – פשוט, אמין, ולעניין. גם אם אתם רק מתחילים – זה המקום להתחיל בו.</p>
   <div class="cards">
-    <a href="/topics/investing-basics.html" class="card-link">
+    <a href="{{ '/topics/investing-basics' | relative_url }}" class="card-link">
       <div class="card">
         <h3>📈 השקעות – איך זה עובד באמת</h3>
         <p>מושגים בסיסיים, סוגי השקעות, וסיכון מול סיכוי – בלי מונחים מבלבלים.</p>
       </div>
     </a>
-    <a href="/topics/saving-budgeting.html" class="card-link">
+    <a href="{{ '/topics/saving-budgeting' | relative_url }}" class="card-link">
       <div class="card">
         <h3>💰 חיסכון וניהול תקציב</h3>
         <p>מה לעשות עם המשכורת הצבאית? איך בונים הרגלים נכונים לעתיד?</p>
       </div>
     </a>
-    <!-- Add other card links here -->
+    <a href="{{ '/topics/pension-funds' | relative_url }}" class="card-link">
+        <div class="card">
+          <h3>📊 פנסיה, גמל וקרנות</h3>
+          <p>כל מה שצריך לדעת על החיסכון לטווח ארוך – בלי להיבהל מהמילים.</p>
+        </div>
+    </a>
+    <a href="{{ '/topics/scam-spotting' | relative_url }}" class="card-link">
+        <div class="card">
+          <h3>🚫 איך לזהות נוכלים</h3>
+          <p>איך לא ליפול בפח של קורסים יקרים או 'יועצים' שמוכרים חלומות.</p>
+        </div>
+    </a>
+    <a href="{{ '/topics/money-mindset' | relative_url }}" class="card-link">
+        <div class="card">
+          <h3>🧠 איך לחשוב נכון על כסף</h3>
+          <p>פסיכולוגיה של כסף: הרגלים, פחדים ואיך לשבור את המחסום.</p>
+        </div>
+    </a>
+    <a href="{{ '/topics/veteran-rights' | relative_url }}" class="card-link">
+        <div class="card">
+          <h3>🎓 זכויות כלכליות למשוחררים</h3>
+          <p>איך לנצל נכון את מענק השחרור, הפיקדון וכל הזכויות שמגיעות לכם.</p>
+        </div>
+    </a>
   </div>
 </section>
 
