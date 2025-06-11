@@ -31,16 +31,48 @@ title: "העתיד הכלכלי שלך מתחיל כאן"
   </div>
 </section>
 
-<section class="section" data-aos="fade-right">
+<section class="section">          <!-- ←  remove data-aos from the wrapper -->
   <h2>למי זה נועד?</h2>
-  <p>האתר הזה מתאים לכל חייל וחיילת שרוצים להבין טוב יותר את הכסף שלהם – לא משנה אם אתם לוחמים, תומכי לחימה, בודדים או רגע לפני שחרור.</p>
-  <div class="cards">
-    <div class="card"><h3>🪖 לוחמים ולוחמות</h3><p>כי לא מדברים איתנו על כסף במטווחים ובתרגילים.</p></div>
-    <div class="card"><h3>🧍‍♂️ חיילים בודדים</h3><p>כשאין גב כלכלי מאחוריך – הידע הזה קריטי.</p></div>
-    <div class="card"><h3>🛫 משתחררים טריים</h3><p>מענק, פיקדון, מסלול אזרחי – לאן כל זה הולך?</p></div>
-    <div class="card"><h3>👨‍💻 מי שרוצה להתחיל להבין</h3><p>לא משנה הרקע שלך – כל אחד יכול להתחיל ללמוד.</p></div>
+  <p>
+    האתר הזה מתאים לכל חייל וחיילת שרוצים להבין טוב יותר את הכסף שלהם –  
+    לא משנה אם אתם לוחמים, תומכי לחימה, בודדים או רגע לפני שחרור.
+  </p>
+
+<div class="cards" id="audience-cards">
+  <div class="card"
+       data-aos="fade-up"
+       data-aos-delay="0"
+       data-aos-anchor="#audience-cards">
+    <h3>🪖 לוחמים ולוחמות</h3>
+    <p>כי לא מדברים איתנו על כסף במטווחים ובתרגילים.</p>
   </div>
+
+  <div class="card"
+       data-aos="fade-up"
+       data-aos-delay="100"
+       data-aos-anchor="#audience-cards">
+    <h3>🧍‍♂️ חיילים בודדים</h3>
+    <p>כשאין גב כלכלי מאחוריך – הידע הזה קריטי.</p>
+  </div>
+
+  <div class="card"
+       data-aos="fade-up"
+       data-aos-delay="200"
+       data-aos-anchor="#audience-cards">
+    <h3>🛫 משתחררים טריים</h3>
+    <p>מענק, פיקדון, מסלול אזרחי – לאן כל זה הולך?</p>
+  </div>
+
+  <div class="card"
+       data-aos="fade-up"
+       data-aos-delay="300"
+       data-aos-anchor="#audience-cards">
+    <h3>👨‍💻 מי שרוצה להתחיל להבין</h3>
+    <p>לא משנה הרקע שלך – כל אחד יכול להתחיל ללמוד.</p>
+  </div>
+</div>
 </section>
+
 
 <section class="section">
   <h2>מה תמצאו כאן?</h2>
