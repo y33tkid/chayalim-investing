@@ -6,6 +6,8 @@
   <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    <!-- AOS: scroll-reveal library -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
 </head>
 <body>
@@ -16,5 +18,13 @@
   </main>
 
   {% include footer.html %}
+    <!-- initialise AOS once, after the page HTML is in the DOM -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,      // play only on first scroll-in
+      duration: 700    // animation length in ms
+    });
+  </script>
 </body>
 </html>
