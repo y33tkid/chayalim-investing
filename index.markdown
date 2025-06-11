@@ -31,7 +31,7 @@ title: "העתיד הכלכלי שלך מתחיל כאן"
   </div>
 </section>
 
-<section class="section">
+<section class="section" data-aos="fade-right">
   <h2>למי זה נועד?</h2>
   <p>האתר הזה מתאים לכל חייל וחיילת שרוצים להבין טוב יותר את הכסף שלהם – לא משנה אם אתם לוחמים, תומכי לחימה, בודדים או רגע לפני שחרור.</p>
   <div class="cards">
