@@ -39,39 +39,48 @@ title: "העתיד הכלכלי שלך מתחיל כאן"
   </p>
 
 <div class="cards" id="audience-cards">
-  <div class="card"
-       data-aos="fade-up"
-       data-aos-delay="0"
-       data-aos-anchor="#audience-cards">
-    <h3>🪖 לוחמים ולוחמות</h3>
-    <p>כי לא מדברים איתנו על כסף במטווחים ובתרגילים.</p>
-  </div>
 
-  <div class="card"
-       data-aos="fade-up"
-       data-aos-delay="100"
-       data-aos-anchor="#audience-cards">
-    <h3>🧍‍♂️ חיילים בודדים</h3>
-    <p>כשאין גב כלכלי מאחוריך – הידע הזה קריטי.</p>
-  </div>
+  <a class="card-link" href="#">
+    <div class="card"
+         data-aos="fade-up"
+         data-aos-delay="0"
+         data-aos-anchor="#audience-cards">
+      <h3>🪖 לוחמים ולוחמות</h3>
+      <p>כי לא מדברים איתנו על כסף במטווחים ובתרגילים.</p>
+    </div>
+  </a>
 
-  <div class="card"
-       data-aos="fade-up"
-       data-aos-delay="200"
-       data-aos-anchor="#audience-cards">
-    <h3>🛫 משתחררים טריים</h3>
-    <p>מענק, פיקדון, מסלול אזרחי – לאן כל זה הולך?</p>
-  </div>
+  <a class="card-link" href="#">
+    <div class="card"
+         data-aos="fade-up"
+         data-aos-delay="100"
+         data-aos-anchor="#audience-cards">
+      <h3>🧍‍♂️ חיילים בודדים</h3>
+      <p>כשאין גב כלכלי מאחוריך – הידע הזה קריטי.</p>
+    </div>
+  </a>
 
-  <div class="card"
-       data-aos="fade-up"
-       data-aos-delay="300"
-       data-aos-anchor="#audience-cards">
-    <h3>👨‍💻 מי שרוצה להתחיל להבין</h3>
-    <p>לא משנה הרקע שלך – כל אחד יכול להתחיל ללמוד.</p>
-  </div>
+  <a class="card-link" href="#">
+    <div class="card"
+         data-aos="fade-up"
+         data-aos-delay="200"
+         data-aos-anchor="#audience-cards">
+      <h3>🛫 משתחררים טריים</h3>
+      <p>מענק, פיקדון, מסלול אזרחי – לאן כל זה הולך?</p>
+    </div>
+  </a>
+
+  <a class="card-link" href="#">
+    <div class="card"
+         data-aos="fade-up"
+         data-aos-delay="300"
+         data-aos-anchor="#audience-cards">
+      <h3>👨‍💻 מי שרוצה להתחיל להבין</h3>
+      <p>לא משנה הרקע שלך – כל אחד יכול להתחיל ללמוד.</p>
+    </div>
+  </a>
+
 </div>
-</section>
 
 
 <section class="section">
